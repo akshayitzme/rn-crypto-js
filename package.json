@@ -1,0 +1,35 @@
+{
+  "name": "rn-crypto-js",
+  "version": "1.0.0",
+  "description": "React Native JavaScript library of crypto-js.",
+  "main": "CryptoJS.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshayitzme/rn-crypto-js"
+  },
+  "keywords": [
+    "security",
+    "crypto",
+    "Hash",
+    "MD5",
+    "SHA1",
+    "SHA-1",
+    "SHA256",
+    "SHA-256",
+    "RC4",
+    "Rabbit",
+    "AES",
+    "DES",
+    "PBKDF2",
+    "HMAC",
+    "OFB",
+    "CFB",
+    "CTR",
+    "CBC"
+  ],
+  "author": {
+    "name": "akshayitzme",
+    "url": "https://github.com/akshayitzme"
+  },
+  "license": "MIT"
+}
