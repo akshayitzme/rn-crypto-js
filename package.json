@@ -1,6 +1,6 @@
 {
   "name": "rn-crypto-js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Native JavaScript library of crypto-js.",
   "main": "CryptoJS.js",
   "repository": {
