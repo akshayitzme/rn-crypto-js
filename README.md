@@ -1,4 +1,5 @@
 # React Native CryptoJS
+> 📢 : Not Actively Maintained, if it works it works
 
 React Native JavaScript Library of crypto-js.
 
