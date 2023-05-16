@@ -17,10 +17,10 @@ yarn add rn-crypto-js
 | [SHA1](#SHA1)             | [HMAC-SHA1](#HMAC-SHA1)           | [DES](#DES)  	            |        	            |
 | [SHA256](#SHA256)         | [HMAC-SHA256](#HMAC-SHA256)       | [TripleDES](#TripleDES) 	|        	            |
 | [SHA224](#SHA224)         | [HMAC-SHA224](#HMAC-SHA224)       | [RC4](#RC4)              	|        	            |
-| [SHA512](#SHA512)         | [HMAC-SHA512](#HMAC-SHA512)       | [RC4Drop](#RC4Drop)   	|        	            |
-| [SHA384](#SHA384)         | [HMAC-SHA384](#HMAC-SHA384)       | [RABBIT](#RABBIT)     	|        	            |
-| [SHA3](#SHA3)             | [HMAC-SHA3](#HMAC-SHA3)           |           	            |        	            |
-| [RIPEMD160](#RIPEMD160) 	| [HMAC-RIPEMD160](#HMAC-RIPEMD160) |           	            |        	            |
+| [SHA512](#SHA512)         | [HMAC-SHA512](#HMAC-SHA512)       | [RC4Drop](#RC4Drop)   	  |        	            |
+| [SHA384](#SHA384)         | [HMAC-SHA384](#HMAC-SHA384)       | [RABBIT](#RABBIT)     	  |        	            |
+| [SHA3](#SHA3)             | [HMAC-SHA3](#HMAC-SHA3)           |           	              |        	            |
+| [RIPEMD160](#RIPEMD160) 	| [HMAC-RIPEMD160](#HMAC-RIPEMD160) |           	              |        	            |
 
 
 #### Plain text encryption
@@ -32,7 +32,7 @@ import CryptoJS from "rn-crypto-js";
 const ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123').toString();
 
 // Decrypt
-const decryptedData  = CryptoJS.AES.decrypt(ciphertext, 'secret key 123')toString(CryptoJS.enc.Utf8);
+const decryptedData  = CryptoJS.AES.decrypt(ciphertext, 'secret key 123').toString(CryptoJS.enc.Utf8);
 console.log(decryptedData); // 'my message'
 ```
 
@@ -46,7 +46,7 @@ const data = [{id: 1}, {id: 2}]
 const ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123').toString();
 
 // Decrypt
-const decryptedString  = CryptoJS.AES.decrypt(ciphertext, 'secret key 123')toString(CryptoJS.enc.Utf8);
+const decryptedString  = CryptoJS.AES.decrypt(ciphertext, 'secret key 123').toString(CryptoJS.enc.Utf8);
 const decryptedData = JSON.parse(decryptedString);
 console.log(decryptedData); // [{id: 1}, {id: 2}]
 ```
